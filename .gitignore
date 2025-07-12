@@ -1,0 +1,7 @@
+vendor
+.vscode
+.phpunit.cache
+coverage
+env.php
+support
+storage
