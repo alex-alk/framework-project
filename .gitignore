@@ -4,4 +4,3 @@ vendor
 coverage
 env.php
 support
-storage/logs/app.log
