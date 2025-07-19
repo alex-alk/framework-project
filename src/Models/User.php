@@ -1,8 +1,8 @@
 <?php
 
-namespace Models;
+namespace App\Models;
 
-use Database\Model;
+use Support\Database\Model;
 
 class User extends Model
 {

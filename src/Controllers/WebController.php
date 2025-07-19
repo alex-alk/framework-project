@@ -1,10 +1,10 @@
 <?php
 
-namespace Controllers;
+namespace App\Controllers;
 
-use Logger\Logger;
-use Models\User;
-use Router\View;
+use App\Models\User;
+use Support\Logger\Logger;
+use Support\Router\View;
 
 class WebController
 {
