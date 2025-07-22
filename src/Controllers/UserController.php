@@ -4,24 +4,20 @@ namespace App\Controllers;
 
 use App\Models\User;
 use Support\Logger\Logger;
+use Support\Router\JsonResponse;
 use Support\Router\View;
 
-class WebController
+class UserController
 {
 
     public function __construct(private Logger $logger)
     {
     }
 
-    public function index(): View
+    public function index(): JsonResponse
     {
         $this->logger->debug('abc');
         $users = User::all();
-        return View::make('home');
-    }
-
-    public function page(): View
-    {
-        return View::make('page');
+        return new JsonResponse($users);
     }
 }
